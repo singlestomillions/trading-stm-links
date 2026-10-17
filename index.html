@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>@trading.stm</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  html, body { height: 100%; }
+  body {
+    background: #0a0e14;
+    color: #e8edf3;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    min-height: 100vh; padding: 24px 20px;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { width: 100%; max-width: 380px; text-align: center; }
+  .logo {
+    width: 64px; height: 64px; margin: 0 auto 14px;
+    border: 2px solid #22c55e; border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-size: 30px; font-weight: 800; color: #22c55e;
+    font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  }
+  h1 { font-size: 22px; font-weight: 700; letter-spacing: .02em; margin-bottom: 6px; }
+  .sub { font-size: 13px; color: #8b94a3; margin-bottom: 28px; }
+  a.card {
+    display: block; text-decoration: none; color: #e8edf3;
+    background: #111722; border: 1px solid #232c3d; border-radius: 14px;
+    padding: 20px 18px; margin-bottom: 14px;
+    transition: border-color .15s ease, transform .15s ease;
+  }
+  a.card:active { transform: scale(.98); }
+  a.card.primary { border-color: #22c55e; background: #0f1a14; }
+  a.card.primary .cta { color: #22c55e; }
+  a.card.secondary { border-color: #3b82f6; background: #0e1420; }
+  a.card.secondary .cta { color: #3b82f6; }
+  .cta { display: block; font-size: 17px; font-weight: 700; margin-bottom: 6px; }
+  .line { display: block; font-size: 13px; color: #8b94a3; }
+  .foot { margin-top: 26px; font-size: 11px; color: #5b6472; }
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="logo">$</div>
+    <h1>@trading.stm</h1>
+    <div class="sub">Pick one</div>
+
+    <a class="card primary" href="https://trading-stm.lovable.app">
+      <span class="cta">Try TradeOS free</span>
+      <span class="line">Free to start &middot; Pro is $19/mo, cancel anytime</span>
+    </a>
+
+    <a class="card secondary" href="https://buy.stripe.com/3cI3cu0Hb08t9TNckjdfG03">
+      <span class="cta">Alpha Trader Toolkit — $35</span>
+      <span class="line">One-time purchase &middot; instant download</span>
+    </a>
+
+    <a class="card" href="https://www.tradingview.com/?aff_id=1172619">
+      <span class="cta">TradingView — charts I use</span>
+      <span class="line">Get a $15 coupon via my link &middot; #ad affiliate link</span>
+    </a>
+
+    <a class="card" href="https://fundednext.com/?fpr=SINGLESTM">
+      <span class="cta">FundedNext — prop firm challenges</span>
+      <span class="line">Use code SINGLESTM &middot; discounts up to 10% on Futures &middot; #ad affiliate link</span>
+    </a>
+
+    <div class="foot">Trading involves risk. Educational content only — not financial advice. Some links are affiliate links — I earn a commission at no extra cost to you.</div>
+  </div>
+</body>
+</html>
